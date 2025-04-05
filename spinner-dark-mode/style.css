@@ -1,0 +1,39 @@
+body{
+  overflow: hidden;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+
+  .button-dark{
+    background: #445a9f;
+    color: #f8f8f8;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .dark-mode {
+    background-color: #1b1a1a;
+    color: white;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
